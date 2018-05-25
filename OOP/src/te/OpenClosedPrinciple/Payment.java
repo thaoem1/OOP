@@ -1,8 +1,12 @@
 package te.OpenClosedPrinciple;
 
-public class Payment {
+import java.util.Scanner;
+
+
+public abstract class Payment {
 	private int id;
 	private String nameGoods;
+	private float price;
 	
 	public Payment() {
 		super();
@@ -23,9 +27,7 @@ public class Payment {
 	public void setNameGoods(String nameGoods) {
 		this.nameGoods = nameGoods;
 	}
-	//abstract double rice();
-	public static void main(String []agrs) {
-		
-	}
+	
+	abstract void sale();
 	
 }
